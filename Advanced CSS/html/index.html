@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My CSS Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftSide-col">
+                    <h1 class="large">Crazy Radness</h1>
+                    <h1 class="large">Made for Devslopers</h1>
+                </div>
+                <form>
+                    <div class="leftSide-col">
+                        <h2>Username</h2>
+                        <input class="inputbox" type="text" name="username" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class="inputbox" name="password" type="text" placeholder="Password">
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="rightSide-col">
+                    <div class="videoContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A71aqufiNtQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <header>
+        <h1 class="section2Header">The Standards of Awesomeness</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="../img/devIcon.png">
+                    </div>
+                    <label>Chat with me</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies convallis nibh, nec ultrices nibh consectetur at.</p>
+
+                </div>
+
+
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="../img/devIcon.png">
+                    </div>
+                    <label>Learn to Code</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies convallis nibh, nec ultrices nibh consectetur at.</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="../img/devIcon.png">
+                    </div>
+                    <label>Build an Empire</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies convallis nibh, nec ultrices nibh consectetur at.</p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button type="" class="learnMore">Learn More</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                /*Change topnav top topnav.responsibe*/
+
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
