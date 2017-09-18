@@ -1,7 +1,8 @@
 var numField1 = document.getElementById('numField1');
 var numField2 = document.getElementById('numField2');
 var resultField = document.getElementById('resultField');
-var form = document.getElementById("xIsWhatPercentOfY");
+var calc = document.getElementById("selectCalc");
+var form = document.getElementById("formCalc");
 
 
 
@@ -13,13 +14,29 @@ form.addEventListener('submit', function(event) {
         var x = parseFloat(numField1.value);
         var y = parseFloat(numField2.value);
 
-        var result = x / y;
-        var percent = result * 100;
+        if (calc.value == '1'){
+             result = (y/x)*100;
+            
+        }else if (calc.value == '2'){
 
-        resultField.innerText = "Answer: " + percent + "%";
+             result = (x*100)/y;
+            
+        }else if (calc.value == '3'){
+        
+            result= (y/x)*100;
+            
+        }else if (calc.value == '4'){
+
+             result = x*y;
+             
+        }else if (calc.value == '5'){
+
+             result = y/x;
+                
+        }
+
+        resultField.innerText = "Answer: " + result + "%";
         event.preventDefault();
-
-
 
     }
 
